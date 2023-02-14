@@ -4,7 +4,10 @@
 
 const ePaisagem = (largura, altura) => largura > altura ? 'A imagem está em modo paisagem' : 'A imagem está em modo retrato';
 
+const ePaisagem2 = (largura, altura) => largura > altura;
+
 const x = 10;
 const y = 20;
 
 console.log(ePaisagem(x, y));
+console.log(ePaisagem2(x, y));

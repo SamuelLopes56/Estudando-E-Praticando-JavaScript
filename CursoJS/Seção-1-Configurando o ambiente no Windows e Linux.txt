@@ -1,0 +1,1 @@
+A seção 1 são dicas de configurações para o ambiente windows e linux, então não colocarei conteúdo relacionado a essa seção no repositório.
