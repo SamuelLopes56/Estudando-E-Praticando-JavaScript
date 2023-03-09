@@ -9,3 +9,4 @@ const numerosPares = numeros
   .reduce((ac, valor) => ac + valor);
 
 console.log(numerosPares);
+console.log(typeof(numerosPares));
