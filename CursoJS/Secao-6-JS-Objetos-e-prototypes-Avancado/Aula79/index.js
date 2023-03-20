@@ -17,6 +17,7 @@ const falar = {
   };
   
   const pessoaPrototype = Object.assign({}, falar, comer, beber);
+  // const pessoaPrototype = {...falar, ...comer, ...beber}; // Como é possível ver aqui, também pode ser feito com spread operator(...).
   
   function criaPessoa(nome, sobrenome) {
     return Object.create(pessoaPrototype, {
