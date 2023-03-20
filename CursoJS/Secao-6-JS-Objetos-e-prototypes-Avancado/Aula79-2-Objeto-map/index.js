@@ -26,3 +26,6 @@ for (const [identifier, {id, nome}] of novasPessoas){
 for (const pessoas of novasPessoas){
     console.log(pessoas);
 }
+
+novasPessoas.delete(2);
+console.log(novasPessoas);
