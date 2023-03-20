@@ -12,11 +12,19 @@ const asd = {
   chave2: 'haha'
 };
 
-console.log(asd.chave2);
+const a = 'chave';
+const b = 'chave2';
 
-for (let hehe in asd) {
+console.log(asd.chave);
+console.log(asd.chave2);
+console.log(asd['chave']);
+console.log(asd['chave2']);
+console.log(asd[a]);
+console.log(asd[b]);
+
+for (let x in asd) {
   console.log('---------------')
-  console.log(asd[hehe]);
+  console.log(asd[x]); // Isso asd[hehe] é o mesmo que isso asd['chave'] e asd['chave2']
   console.log(asd);
-  console.log(hehe);
+  console.log(x);
 }

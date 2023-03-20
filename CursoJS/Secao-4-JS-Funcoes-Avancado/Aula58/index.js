@@ -2,7 +2,7 @@
 // Função fabrica -> objetos
 // Construtora -> Pessoa (new)
 function Pessoa(nome, sobrenome) { // Funções construtoras iniciam com letras maiúsculas. E também não precisa usar ',' para separar os atributos e métodos.
-    // Atributos ou métodos privados
+    // Atributos ou métodos privados    // Com funções construtoras é bom ter um nome direto. Exemplo: não ser algo como "CriarPessoa" e sim algo como "Pessoa".
     // const ID = 123456;
     // const metodoInterno = function() {};
   

@@ -1,5 +1,5 @@
-function Calculadora() {
-    this.display = document.querySelector('.display');
+function Calculadora() { // Funções construtoras iniciam com letras maiúsculas. E também não precisa usar ',' para separar os atributos e métodos.
+    this.display = document.querySelector('.display'); // Com funções construtoras é bom ter um nome direto. Exemplo: não ser não algo como "CriarPessoa" e sim algo como "Pessoa".
     //this.btnClear = document.querySelector('.btn-clear');
 
 
