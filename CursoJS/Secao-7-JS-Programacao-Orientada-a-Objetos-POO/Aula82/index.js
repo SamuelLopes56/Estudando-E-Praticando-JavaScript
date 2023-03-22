@@ -25,7 +25,7 @@ class DispositoEletronico {
   
   class Smartphone extends DispositoEletronico {
     constructor(nome, cor, modelo) {
-      super(nome);
+      super(nome); // Ta chamando os parâmetros da classe pai. É equivalente ao método call() nas funções construtoras.
   
       this.cor = cor;
       this.modelo = modelo;
@@ -55,3 +55,4 @@ class DispositoEletronico {
   console.log(s1);
   
   const t1 = Tablet.criador('iPad', true);
+  console.log(t1);

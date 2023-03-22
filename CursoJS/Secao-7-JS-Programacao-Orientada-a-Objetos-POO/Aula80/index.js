@@ -1,15 +1,15 @@
-class Pessoa {
+class Pessoa { // Classe.
     constructor(nome, sobrenome) {
       this.nome = nome;
       this.sobrenome = sobrenome;
     }
   
-    falar() {
+    falar() { // Nas classes os métodos já são automaticamente atribuidos ao _proto_(prototype).
       console.log(`${this.nome} está falando.`);
     }
   }
   
-  function Pessoa2(nome, sobrenome) {
+  function Pessoa2(nome, sobrenome) { // Função construtora.
     this.nome = nome;
     this.sobrenome = sobrenome;
   }
