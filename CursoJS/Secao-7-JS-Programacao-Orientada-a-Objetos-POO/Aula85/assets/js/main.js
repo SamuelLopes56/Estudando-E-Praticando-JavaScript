@@ -100,7 +100,7 @@ class ValidaFormulario {
         const div = document.createElement('div');
         div.innerHTML = msg;
         div.classList.add('error-text');
-        campo.insertAdjacentElement('afterend', div); // insertAdjacentElement adiciona o elemento escolhido perto do elemento alvo. Nesse caso foi adicionado o elemento (div) após (afterend) o alvo (campo) selecionado (insertAdjacentElement('afterend, div)).
+        campo.insertAdjacentElement('afterend', div); // insertAdjacentElement adiciona o elemento escolhido perto do elemento alvo. Nesse caso foi adicionado o elemento (div) após (afterend) o alvo (campo) selecionado (insertAdjacentElement('afterend', div)).
     }
 }
 
