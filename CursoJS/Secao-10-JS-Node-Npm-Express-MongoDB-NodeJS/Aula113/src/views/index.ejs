@@ -1,0 +1,21 @@
+<%- include('includes/head'); %>
+
+  <section class="container">
+    <h1>
+      
+      <% if(typeof titulo !== 'undefined'){ %>
+        <%= titulo %>
+      <% } else { %>
+        O título não foi enviado.
+      <% } %>
+
+    </h1>
+    <p><%= umaVariavelLocal %></p>
+    <form action="/" method="post">
+      <label for="">Cliente</label>
+      <input type="text" name="cliente">
+      <button>Enviar</button>
+    </form>
+  </section>
+
+  <%- include('includes/footer'); %>
