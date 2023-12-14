@@ -19,7 +19,12 @@ const helmet = require('helmet');
 const csurf = require('csurf');
 const { middlewareGlobal, checkCsurfError, csurfMiddleware } = require('./src/middlewares/middleware');
 
-app.use(helmet()); // Desativar se estiver em servidor local sem SSL (https), pois ele pode bloquear envio de coisas como css, js...
+app.use(helmet()); /* O Helmet é para segurança da aplicação, portanto, caso você esteja com um sistema ainda em desenvolvimento, usando urls como "127.0.0.1", "localhost" ou até um servidor com IP externo, sem usar SSL (https), é recomendável desativá-lo. Ele pode bloquear importação de scripts e arquivos de CSS.
+
+Caso ocorra erros ao importar o bundle.js, arquivos de CDN (como bootstrap, por exemplo) ou CSS, basta desativar o helmet para correção.
+
+Isso só ocorrerá em sistemas sem SSL (sem https na URL).
+ */
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.resolve(__dirname, 'public')));
 
